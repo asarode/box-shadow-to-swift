@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Ideas delivered every week</title>
+  <meta name="description" content="Email newsletter that delivers a few development project ideas to your inbox every week.">
+  <meta name="author" content="Arjun Sarode">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="title">Box Shadow to Swift Generator</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 main-content">
+        <div class="content-flexed">
+          <div class="input-container">
+            <div class="input-identifier">
+              Horizontal Offset
+            </div>
+            <input id="hOffset" class="input-value" type="text" value="0">
+
+          </div>
+
+          <div class="input-container">
+            <div class="input-identifier">
+              Vertical Offset
+            </div>
+            <input id="vOffset" class="input-value" type="text" value="4">
+
+          </div>
+
+          <div class="input-container">
+            <div class="input-identifier">
+              Shadow Radius
+            </div>
+            <input id="shadowRadius" class="input-value" type="text" value="5">
+
+          </div>
+
+          <div class="input-container">
+            <div class="input-identifier">
+              Shadow Opacity
+            </div>
+            <input id="shadowOpacity" class="input-value" type="text" value="0.4">
+
+          </div>
+
+          <div class="input-container">
+            <div class="input-identifier">
+              Shadow Color
+            </div>
+            <input id="shadowColor" class="input-value input-color" type="text" value="#000000">
+            <div class="input-color-button" type="button"></div>
+          </div>
+          
+          <p class="separate">only used for visualization</p>
+          <div class="input-container">
+            <div class="input-identifier">
+              Box Color
+            </div>
+            <input id="boxColor" class="input-value input-color" type="text" value="#ffffff">
+          </div>
+
+          <div class="input-container">
+            <div class="input-identifier">
+              Background Color
+            </div>
+            <input id="backColor" class="input-value input-color" value="#474747">
+          </div>
+        </div>
+
+        <div class="content-flexed">
+          <div class="box-container">
+            
+            <input id="viewName" type="text" placeholder="viewName">
+            <div class="box-code">viewName.layer.shadowColor = UIColor(red: 1, green: 1, blue: 1).CGColor
+viewName.layer.shadowOffset = CGSize(width: 0, height: 10)
+viewName.layer.shadowOpacity = 0.4
+viewName.layer.shadowRadius = 5
+            </div>
+            <div class="box-copy">
+              <button type="button" class="copy-button">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="ZeroClipboard.js"></script>
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>

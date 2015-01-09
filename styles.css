@@ -1,0 +1,98 @@
+/* =========================== */
+/* LAYOUT STYLES */
+/* =========================== */
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #FFFEF9;
+}
+
+.main-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 60px 0;
+	background-color: #474747;
+}
+
+.content-flexed {
+	flex: 0 1 340px;
+}
+
+
+/* =========================== */
+/* ELEMENTS */
+/* =========================== */
+.title {
+	text-align: center;
+}
+p.separate {
+	margin-top: 30px;
+	font-size: 10px;
+	color: #979797;
+}
+
+/* =========================== */
+/* MODULES */
+/* =========================== */
+.input-container {
+	display: flex;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.input-identifier {
+	flex-grow: 1;
+	border-radius: 6px 0 0 6px;
+	border: 1px solid #333;
+	border-right: none;
+	border-color: #FFFEF9;
+	padding: 8px 15px;
+	background-color: #FFFEF9;
+}
+
+.input-value {
+	flex: 0 1 45px;
+	border-radius: 0 6px 6px 0;
+	border: 1px solid #333;
+	border-left: none;
+	border-color: #FFFEF9;
+	padding: 0 8px;
+	background-color: rgba(0,0,0,0.2);
+	color: #FFFEF9;
+
+}
+
+.input-value.input-color {
+	flex: 0 1 90px;
+}
+
+.input-color-button {
+	position: absolute;
+	right: -30px;
+}
+
+
+.box-container {
+	width: 400px;
+	background-color: #eee;
+	padding: 60px;
+	border-radius: 6px;
+}
+
+.box-code {
+	background-color: #fff;
+	padding: 15px;
+	margin: 15px 0;
+	white-space: pre;
+	word-wrap: break-word;
+}
+
+
+/* =========================== */
+/* MEDIA QUERIES */
+/* =========================== */
+
+/*@media (max-width: 980px) {
+
+}*/
+
