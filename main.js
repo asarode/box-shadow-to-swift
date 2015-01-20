@@ -141,18 +141,9 @@ $(document).ready(function() {
 
 
 	initialSetup()
-	var client = new ZeroClipboard($(".copy-button"));
 
-	client.on( 'ready', function(event) {
-        console.log( 'movie is loaded' );
-
-        client.on( 'copy', function(event) {
-          event.clipboardData.setData('text/plain', event.target.innerHTML);
-        } );
-
-        client.on( 'aftercopy', function(event) {
-          console.log('Copied text to clipboard: ' + event.data['text/plain']);
-        } );
-      } );
+	$(".copy-button").click(function(){
+		$(".box-code").select()
+	})
 
 });
